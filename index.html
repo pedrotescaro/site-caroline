@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Uma homenagem de aniversário para Caroline Paula Ribeiro Silvestre."
+    />
+    <title>Feliz Aniversário, Mãe | Caroline Paula Ribeiro Silvestre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+    <div class="floating-hearts" data-floating-hearts aria-hidden="true"></div>
+    <div class="music-presence" data-music-presence aria-hidden="true">
+      <span class="presence-pulse"></span>
+      <strong>The Climb</strong>
+      <span class="presence-bars">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </div>
+
+    <main id="topo">
+      <section class="hero" data-hero>
+        <div class="decor decor-one" aria-hidden="true">✦</div>
+        <div class="decor decor-two" aria-hidden="true">♡</div>
+        <div class="decor decor-three" aria-hidden="true">✿</div>
+
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Feliz aniversário, mãe</p>
+            <h1>Feliz Aniversário, Mãe!</h1>
+            <p class="hero-signature">Caroline Paula Ribeiro Silvestre</p>
+            <p class="hero-date">09/05 — um dia tão especial quanto você.</p>
+            <p class="hero-message">
+              Hoje é o seu dia, e eu queria te lembrar o quanto você é especial
+              para mim.
+            </p>
+            <div class="hero-actions">
+              <div class="music-player" data-music-player>
+                <div class="track-meta">
+                  <span>Tocando agora</span>
+                  <strong>Miley Cyrus - The Climb</strong>
+                </div>
+                <label class="player-progress-wrap" aria-label="Progresso da música">
+                  <input
+                    class="player-progress"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="0"
+                    step="0.1"
+                    data-music-progress
+                  />
+                </label>
+                <div class="player-times">
+                  <span data-current-time>0:00</span>
+                  <span data-duration>0:00</span>
+                </div>
+                <div class="player-controls">
+                  <button class="player-button" type="button" data-music-toggle aria-label="Tocar The Climb">
+                    <span data-player-icon>▶</span>
+                  </button>
+                  <div class="player-bars" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <p data-music-status>Pronta para tocar</p>
+                </div>
+                <audio data-music-audio preload="metadata">
+                  <source src="public/audio/-%20%20-%20The%20Climb%20Miley%20Cyrus.mp3.mp3" type="audio/mpeg" />
+                  <source src="public/audio/the-climb.mp3" type="audio/mpeg" />
+                </audio>
+              </div>
+              <a class="primary-button" href="#mensagem" data-scroll-message>
+                Ver homenagem
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-photo-shell" data-hero-photo-shell>
+            <div class="date-badge">09/05</div>
+            <img
+              class="hero-photo"
+              data-hero-photo
+              src=""
+              alt="Foto principal de Caroline Paula Ribeiro Silvestre"
+            />
+            <div class="hero-photo-empty" data-hero-photo-empty>
+              <span>♡</span>
+              <p>Caroline, este espaço é para a sua foto principal.</p>
+            </div>
+            <p class="polaroid-caption">A estrela do dia</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section message-section" id="mensagem">
+        <div class="section-heading">
+          <p class="section-kicker">Uma carta para você</p>
+          <h2>Com todo o meu carinho</h2>
+        </div>
+
+        <article class="letter-card">
+          <div class="letter-ribbon" aria-hidden="true"></div>
+          <p>
+            Mãe, hoje é o seu dia, mas quem ganhou o maior presente fui eu por
+            ter você na minha vida. Obrigado por todo amor, cuidado, força e
+            carinho. Você é uma mulher incrível, uma mãe maravilhosa e uma
+            inspiração todos os dias. Que seu novo ciclo seja cheio de saúde,
+            paz, alegria, amor e muitos motivos para sorrir. Eu te amo muito.
+            Feliz aniversário!
+          </p>
+          <span>Para Caroline, com amor.</span>
+        </article>
+      </section>
+
+      <section class="section qualities-section" id="qualidades">
+        <div class="section-heading">
+          <p class="section-kicker">O que eu amo em você</p>
+          <h2>Coisas que amo em você</h2>
+        </div>
+
+        <div class="qualities-grid" data-qualities></div>
+      </section>
+
+      <section class="section moments-section" id="momentos">
+        <div class="section-heading">
+          <p class="section-kicker">Pedaços preciosos da vida</p>
+          <h2>Momentos especiais</h2>
+        </div>
+
+        <div class="moments-list" data-moments></div>
+      </section>
+
+      <section class="final-section">
+        <div class="final-content">
+          <p class="final-small">Que este novo ciclo te abrace com leveza.</p>
+          <h2>Com amor, Pedro.</h2>
+          <p class="final-message">
+            Que esse novo ciclo te devolva todo o amor que você sempre entregou.
+          </p>
+          <div class="final-actions">
+            <button class="surprise-button" type="button" data-surprise-button>
+              Abrir carinho 🎁
+            </button>
+            <button class="secondary-button" type="button" data-back-top>
+              Voltar ao topo
+            </button>
+          </div>
+          <div class="surprise-message" data-surprise-message hidden>
+            <p>
+              Mãe, você é casa, abraço, cuidado e força. Que hoje você consiga
+              sentir, em cada gesto, sorriso e detalhe, o quanto é amada,
+              admirada e especial para mim e para todos que têm a sorte de
+              caminhar ao seu lado. Seu amor ilumina a minha vida, e eu sou
+              imensamente grato por ter você como minha mãe.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
