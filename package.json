@@ -1,0 +1,11 @@
+{
+  "name": "site-caroline",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site estático de Feliz Aniversário para Caroline Paula Ribeiro Silvestre.",
+  "scripts": {
+    "start": "python -m http.server 5501 --bind 127.0.0.1",
+    "dev": "python -m http.server 5501 --bind 127.0.0.1",
+    "build": "echo \"Static site ready\""
+  }
+}
